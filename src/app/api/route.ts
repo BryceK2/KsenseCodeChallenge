@@ -2,8 +2,8 @@ import { NextResponse } from "next/server";
 import { Redis } from "@upstash/redis";
 
 const redis = new Redis({
-  url: "UPSTASH_REDIS_REST_URL",
-  token: "UPSTASH_REDIS_REST_TOKEN",
+  url: process.env.UPSTASH_REDIS_REST_URL,
+  token: process.env.UPSTASH_REDIS_REST_TOKEN,
 });
 
 // POST route to handle payload
