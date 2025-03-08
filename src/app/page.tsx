@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
-  return <div>To do</div>;
+  return <div>Bryce Kelly</div>;
 }
