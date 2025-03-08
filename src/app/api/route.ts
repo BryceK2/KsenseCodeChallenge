@@ -13,7 +13,7 @@ export async function POST(request: Request) {
 
 // GET route for retrieval once payload sent
 // I can check Vercel's KV db for speed, but this route is for you to check for storage
-export async function GET(request: Request) {
+export async function GET() {
   const payload = await kv.get("secret_message");
   if (!payload) {
     return NextResponse.json({ error: "No secret message stored." });
